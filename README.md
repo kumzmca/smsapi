@@ -1,7 +1,26 @@
-# smsapi
-Web service api to handle inbound and outbound sms.
+# SMS api
+This project is about Web service api to handle inbound and outbound sms ( logging and others functionality )
 
-Technologies used in this project  
+To install this project you need some requirements which mentioned below 
+Download this project 
+extract it to your project location
+Open eclipse
+file -> import -> Existing maven projects -> browse to download path and select the project and finish
+project will imported in your workspace
+right click the project -> maven -> update project
+now project is in working condition.
+
+Final change whatever you want to make it
+export as war and put it in your web container as it as or file system.
+ ----------------------------------  ----------------------------------  ---------------------------------- 
+For database you need to change your db.properties under root/resources/db.properties -configurable
+ ----------------------------------  ----------------------------------  ---------------------------------- 
+To change redis environment, go to Constants.java and change  - not configurable coz it relays on same server
+usually ppl will put redis server on developement rather than some other server. so we don't want to make it
+configurable
+
+
+Required Technologies used in this project  
  ---------------------------------- 
  Tech		  	    Purpose  
  Java 		      (J2se, j2ee) 
