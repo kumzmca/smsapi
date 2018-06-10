@@ -1,16 +1,25 @@
 # SMS api
 This project is about Web service api to handle inbound and outbound sms ( logging and others functionality )
-
+ ----------------------------------  ----------------------------------  ---------------------------------- 
 To install this project you need some requirements which mentioned below 
+ ----------------------------------  ----------------------------------  ---------------------------------- 
 Download this project 
+ ----------------------------------  ----------------------------------  ---------------------------------- 
 extract it to your project location
+ ----------------------------------  ----------------------------------  ---------------------------------- 
 Open eclipse
+ ----------------------------------  ----------------------------------  ---------------------------------- 
 file -> import -> Existing maven projects -> browse to download path and select the project and finish
+ ----------------------------------  ----------------------------------  ---------------------------------- 
 project will imported in your workspace
+ ----------------------------------  ----------------------------------  ---------------------------------- 
 right click the project -> maven -> update project
+ ----------------------------------  ----------------------------------  ---------------------------------- 
 now project is in working condition.
+ ----------------------------------  ----------------------------------  ---------------------------------- 
 
 Final change whatever you want to make it
+ ----------------------------------  ----------------------------------  ---------------------------------- 
 export as war and put it in your web container as it as or file system.
  ----------------------------------  ----------------------------------  ---------------------------------- 
 For database you need to change your db.properties under root/resources/db.properties -configurable
