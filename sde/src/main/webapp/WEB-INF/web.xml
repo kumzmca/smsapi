@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>SMS Service</display-name>
+  <servlet>
+		<servlet-name >Inbound Message Service</servlet-name >
+		<servlet-class>com.sun.jersey.spi.container.servlet.ServletContainer </servlet-class >
+		<init-param >
+			<param-name >com.sun.rsey.config.property.packages</param-name >
+			<param-value >com.sms.inbound,com.sms.outbound</param-value >
+		</init-param >
+		<load-on-startup >1</load-on-startup >
+	</servlet >
+	<servlet-mapping>
+		<servlet-name >Inbound Message Service</servlet-name >
+		<url-pattern >/api/* </url-pattern >
+	</servlet-mapping >
+	<filter>
+	    <filter-name>AuthenticationFilter</filter-name>
+	    <filter-class>com.sms.filter.ValidationFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>AuthenticationFilter</filter-name>
+		<url-pattern>/api/*</url-pattern>
+	</filter-mapping> 
+   
+	
+</web-app>
