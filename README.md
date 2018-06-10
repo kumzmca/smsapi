@@ -1,2 +1,38 @@
 # smsapi
 Web service api to handle inbound and outbound sms.
+
+Technologies used in this project  
+ ---------------------------------- 
+ Tech		  	    Purpose  
+ Java 		      (J2se, j2ee) 
+ Web Service		(Jersey-Restfull web serice) 
+ Json		      	(Jackson) 
+ Redis 			    (Cache-No SQL) 
+ PostgreSQL 		(Database) Maven			
+ (Project Deployment)   
+ ------------------------------------------------------------ 
+ 1			To install redis do following
+ ------------------------------------------------------------
+ curl -O http://download.redis.io/redis-stable.tar.gz tar -xvzf redis-stable.tar.gz
+ rm redis-stable.tar.gz  cd redis-stable  make  sudo make install 
+ ------------------------------------------------------------
+ 2			To install java  
+ ------------------------------------------------------------ 
+ Download and install from http://www.oracle.com/technetwork/java/javase/downloads/index.html Developed version 8 
+ ------------------------------------------------------------ 
+ 3			To Install Eclipse
+ ------------------------------------------------------------ 
+ Download and install from https://www.eclipse.org/downloads/ Developed version j2ee (neon) 
+ ------------------------------------------------------------ 
+ 4			To Install Postgresql 
+ ------------------------------------------------------------ 	
+ *	Install Postgresql for database communication 	
+ *	Download and install from https://www.postgresql.org/download/ Developed Version 9.6
+ ------------------------------------------------------------ 
+ 5			To Install Postgresql
+ ------------------------------------------------------------ 
+ https://tomcat.apache.org/download-80.cgi Developed version 8.5 
+ ------------------------------------------------------------ 
+ 6			To Install maven
+ ------------------------------------------------------------ 
+ import a project as maven project in eclipse find a pom.xml file in this project which resides root  directory of this project ------------------------------------------------------------  BUILD	-	This project build on maven tool  SERVER	-	Developed and  on tomcat server	and deployed in wildfly (cloud) server.
